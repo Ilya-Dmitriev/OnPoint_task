@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc.json",
+  "extends": "@multidise/eslint-config/.eslintrc.json",
+  "ignorePatterns": [
+    "**/*/node_modules"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.tsx",
+        "*.ts",
+        "*.jsx",
+        "*.js"
+      ],
+      "parser": "@typescript/eslint-parser",
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        }
+      }
+    }
+  ],
+  "root": true
+}
